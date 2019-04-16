@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1 id = "title">Student Profile Page</h1>
+  
+  <h3> Name :   <span id = "nameOutput">asd</span> </h3> 
+  <h3> Major : <span id="major"></span></h3>
+  <h3 hidden> Major (Encrypted):<span id="majorEncrypted"></span></h3>
+  <h3> Graduation Year: <span id="year"></span></span></h3>
+  <h3 hidden> Graduation Year (Encrypted): <span id="yearEncrypted"></span></span></h3>
+  <h3>Ethereum Address: <span id="address"></span></span></h3>
+  <br>
+
+  <br><label for="gradYear">Name:</label><input type="text" id="nameInput" placeholder="" ></input>
+  <br><label for="gradMajor">Major:</label><select id="gradMajor" ></select>
+  <br><label for="gradYear">Year:</label><select id="gradYear" ></select>
+
+  <br><br><button id="send" onclick="App.updateUser()">Update Profile</button>
+  
+  <br><br>
+  <span id="status"></span>
+  <span id="databaseStatus"></span>
+  <br>
+  <h3 hidden> -- For Testing -- </h3>
+  <h3 hidden>Number of Users is: <span id="userCount"></span></h3>
+  <br><label for="receiver" hidden>Account Number:</label><input type="text" id="account" placeholder="" hidden></input>
+  <br><br><button id="change" onclick="App.changeUser()" hidden>Change User</button>
+  <h3 hidden>Encrypted Message is: <span id="encryptedMessage"></span></h3>
+  <h3 hidden>Decrypted Message is: <span id="decryptedMessage"></span></h3>
+  <br><label for="asd1" hidden>Message to Encrypt:</label><input type="text" id="toEncrypt" placeholder="" hidden></input>
+ 
+
+  <br><br><button id="encrypt" onclick="App.testEncryptMessage()" hidden>Encrypt Message</button>
+
+  
+  
+</body>
+</html>
